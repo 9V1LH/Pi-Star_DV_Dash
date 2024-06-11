@@ -4233,7 +4233,7 @@ $MYCALL=strtoupper($callsign);
 					    <td align="left"><a class="tooltip2" href="#"><?php echo $lang['baudrate'];?>:<span><b>Baudrate</b>Serial speed (most Hat are using 115200)</span></a></td>
 					    <td align="left" colspan="2"><select name="confHardwareSpeed">
 						<?php
-						$modemSpeeds = [1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200];
+						$modemSpeeds = [1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 460800];
 						foreach($modemSpeeds as $modemSpeed) {
 						    if ($configmmdvm['Modem']['UARTSpeed'] == $modemSpeed) {
 							echo " <option value=\"$modemSpeed\" selected=\"selected\">$modemSpeed</option>\n";
